@@ -48,13 +48,14 @@ body {
     padding: 4px;
 }
 
+
 /* Navigation Bar */
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #000;
-
 }
 
 li {
@@ -72,12 +73,42 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
 
 a:hover:not(.active) {
     background-color: #808080;
 }
-.active{
+
+.active {
     background-color: #0099ff;
+}
+
+
+/* Responsive laoyout */
+
+@media (max-width: 840px) {
+    #leftcoloumn {
+        margin-left: -100;
+    }
+    #rightcoloumn {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+    }
+    #contentcoloumn {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #leftcoloumn {
+        float: none;
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+    }
+    #contentcoloumn {
+        margin-left: 0;
+    }
 }
